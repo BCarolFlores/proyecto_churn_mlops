@@ -57,4 +57,4 @@ El flujo básico será:
 
 Este proyecto utiliza Git para registrar cambios y GitHub para respaldar el repositorio en la nube.
 
-El uso de commits permite mantener trazabilidad sobre los cambios realizados en el código, la documentación y la estructura del proyecto.
+El uso de commits permite mantener trazabilidad sobre los cambios realizados en el código, la documentación y la estructura del proyecto

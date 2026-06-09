@@ -13,6 +13,14 @@ app = FastAPI(
     version="0.1.0",
     description="API básica para consumir un modelo de Machine Learning."
 )
+@app.get("/")
+def inicio():
+    return {
+        "mensaje": "Servicio ML-Ops activo",
+        "estado": "OK",
+        "autor": "Brenda C. Flores Vega"
+    }
+
 
 class Cliente(BaseModel):
     edad: int
@@ -33,7 +41,7 @@ def cargar_modelo():
 @app.get("/")
 def inicio():
     return {
-        "mensaje": "API de predicción de churn activa"
+        "mensaje": "API de predicción de churn activa - Brenda C. Flores Vega"
     }
 
 @app.get("/health")
