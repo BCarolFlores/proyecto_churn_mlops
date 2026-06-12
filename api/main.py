@@ -75,6 +75,14 @@ def health() -> dict[str, str]:
         "modelo": VERSION_MODELO,
     }
 
+@app.get("/Info")
+def inicio() -> dict[str, str]:
+    return {
+        "VersionModelo": "1.1",
+        "Autor": "Brenda Carol Flores Vega",
+        "Variables": "- Antiguedad: meses como cliente  " + "- cargo_mensual: monto mensual pagado  " + "-reclamos: cantidad de reclamos recientes",
+    }
+
 @app.post("/predict", response_model=PrediccionSalida)
 def predict(datos: ClienteEntrada) -> PrediccionSalida:
     try:
