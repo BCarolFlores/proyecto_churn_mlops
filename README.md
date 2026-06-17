@@ -59,8 +59,8 @@ Este proyecto utiliza Git para registrar cambios y GitHub para respaldar el repo
 
 El uso de commits permite mantener trazabilidad sobre los cambios realizados en el código, la documentación y la estructura del proyecto
 
-## Pipeline
-Flujo ML-Ops, representando cómo el modelo pasaría desde los datos iniciales hasta una solución productiva y monitoreada.
+## Pipeline - Flujo final del proyecto
+Flujo ML-Ops, representa cómo el modelo pasa desde los datos iniciales hasta una solución productiva y monitoreada usando contenedores.
 
 ```mermaid
 flowchart TD
