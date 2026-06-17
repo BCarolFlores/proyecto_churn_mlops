@@ -58,3 +58,20 @@ El flujo básico será:
 Este proyecto utiliza Git para registrar cambios y GitHub para respaldar el repositorio en la nube.
 
 El uso de commits permite mantener trazabilidad sobre los cambios realizados en el código, la documentación y la estructura del proyecto
+
+## Pipeline
+Flujo ML-Ops, representando cómo el modelo pasaría desde los datos iniciales hasta una solución productiva y monitoreada.
+
+```mermaid
+flowchart TD
+    A[Datos] --> B[Preprocesamiento]
+    B --> C[Entrenamiento]
+    C --> D[Validación]
+    D --> E[Modelo Serializado]
+    E --> F[API FastAPI]
+    F --> G[Docker]
+    G --> H[Despliegue-Predicción]
+    H --> I[Monitoreo]
+    I --> J[Detección de Drift]
+    J --> K[Mejora Continua]
+```
